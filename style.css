@@ -1,0 +1,87 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+
+/* Body header */
+
+#body-header{
+    background-image: url("static/wallpaperflare.com_wallpaper\ \(1\).jpg");
+    background-size: cover;
+    width:100vw;
+    height:50vh;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.1s;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    justify-content: center;
+}
+#navbar-list li {
+    display: inline-block;
+    margin-right:10px;
+    color:white;
+}
+#navbar-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+#social-icons-container{
+ margin-top: 5%;
+    
+}
+#social-icons-container h1{
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+}
+#social-icons-list{
+    display: flex;
+    justify-content: center; 
+    
+}
+#social-icons-list li img{
+      width:25px;
+      height:25px;
+      padding:1rem;
+
+}
+#social-icons-list li{
+   
+     list-style: none;
+     
+ 
+}
+#social-icons-list li a img:hover{
+    width:30px;
+    height:30px;
+    opacity: 0.1s;
+}
+
+/* main */
+main section{
+    width: 100vw;
+    height:auto;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile-pic{
+    border-radius: 50%;
+    margin-top: -5%;
+}
+#profile-pic img{
+    width:200px;
+    height:200px;
+}
+#about-container p{
+    font-size:1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
