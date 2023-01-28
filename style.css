@@ -4,6 +4,7 @@ body{
 }
 
 
+
 /* Body header */
 
 #body-header{
@@ -80,8 +81,127 @@ main section{
 #profile-pic img{
     width:200px;
     height:200px;
+    border-radius: 50%;
+}
+#about-container{
+
+    margin-left:5px;
+    margin-right:30px;
 }
 #about-container p{
-    font-size:1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.2rem;
+   font-family: sans-serif;
+   text-align: justify;
+}
+
+/* Skills */
+
+#skills{
+    width:100vw;
+    height:70vh;
+    
+}
+.section-heading{
+     display: flex;
+    justify-content: center;
+   
+}
+.section-heading span img{
+     width:35px;
+     height:35px;
+}
+.section-heading span{
+    color:rgba(0, 0, 255, 0.817);
+    margin-right:10px;
+
+}
+#skills-display{
+    width:100%;
+    height:40vh;
+    margin-top:10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+#skills-display>div{
+    margin-left:100px;
+    margin-right:70px;
+    width:150px;
+    height:35px;
+    border-radius: 20px;
+}
+
+.skill-progress{
+   position: relative;
+   border:1px solid black;
+}
+
+.skill-progress span{
+     font-size: 1.3rem;
+     color:white;
+     position: absolute;
+     top:8px;
+     left:5px;
+     
+}
+
+
+.fifty-percent{
+    width:70%;
+    height:inherit;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.eighty-five-percent{
+    width:70%;
+    height:inherit;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.ninety-percent{
+    width:70%;
+    height:inherit;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+}
+.mb-green{
+    background-color: #0b8176;
+}
+.mb-orange{
+    background-color: #ec4d1c;
+}
+.mb-brown{
+    background-color: #93738c;
+}
+
+
+/* portfolio */
+#portfolio{
+    width:100vw;
+    height:auto;
+    
+   
+}
+#portfolio-container{
+    width:90%;
+    height:auto;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#portfolio-container > div{
+    margin-bottom:20px;
+    margin-right:25px;
+}
+.portfolio-image-container img{
+    width:300px;
+    height:300px;
 }
