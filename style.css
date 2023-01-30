@@ -1,6 +1,7 @@
 body{
     padding:0;
     margin:0;
+ 
 }
 
 
@@ -15,6 +16,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     opacity: 0.1s;
+  
 }
 
 /* Navbar */
@@ -68,6 +70,8 @@ body{
 main section{
     width: 100vw;
     height:auto;
+   
+ 
 }
 #about {
     display: flex;
@@ -182,6 +186,105 @@ main section{
 }
 
 
+/* Timeline expereince section */
+
+.timeline{
+    position: relative;
+    width:75%;
+    height:auto;
+    left:15%;
+  
+}
+.timeline-box{
+    width:400px;
+    height:auto;
+    margin:10px ;
+    position: relative;
+}
+
+.timeline-box:nth-child(2n){
+    position:relative;
+    left:55%;
+}
+
+.timeline-box-details  {
+    text-align: right;
+    position: relative;
+   
+}
+#about-designation{
+    color:blue;
+    text-align: justify;
+    
+}
+#designation{
+    color:blue;
+    font-size:1.9rem;
+    margin-top:5px;
+   
+}
+#company-name{
+    color:orangered;
+    font-size:1.3rem;
+    line-height: 0%;
+}
+#month{
+    font-size:0.8rem;
+    line-height: 0%;
+
+}
+
+#timeline-box-logo{
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:2%;
+    top:2%;
+}
+
+.timeline-divider{
+    position: absolute;
+    top:10%;
+    width:0;
+    height:75%;
+    border:2px dashed blue;
+    left:50%;
+}
+
+.timeline-traveller{
+    width: fit-content;
+   transform: rotate(180deg);
+    margin-left:-20px;
+    position: sticky;
+    top:51%;
+    
+}
+.timeline-traveller img{
+    width:40px;
+    height:40px;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    width:0.7rem;
+    height:0.7rem;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top:35%;
+    left:-17%;
+}
+
+.timeline-box:nth-child(2n + 1)::after{
+    content: '';
+    width:0.7rem;
+    height:0.7rem;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top:35%;
+    right:-30%;
+}
 /* portfolio */
 #portfolio{
     width:100vw;
@@ -204,4 +307,86 @@ main section{
 .portfolio-image-container img{
     width:300px;
     height:300px;
+}
+
+
+
+/* Contact */
+#contact{
+    width:auto;
+    height:auto;
+    margin-left: 60px;
+    margin-right:60px;
+    background-image: linear-gradient(#2857a4,#403066);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact .section-heading span{
+    color:white;
+}
+.contact-container{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:75%;
+    margin-left:5%;
+}
+.feedback-container{
+    width:40%;
+    height:auto;
+    margin-left:15px;
+    margin-top:15px;
+    display: inline-block;
+}
+.feedback-container  input{
+    margin-bottom: 20px;
+    width:400px;
+    height:35px;
+    
+    
+}
+.feedback-container input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.feedback-container textarea:focus{
+    outline: none;
+}
+
+.feedback-container textarea{
+    margin-bottom: 20px;
+    width:400px;
+    height:35px;
+}
+.msgBtn{
+    padding:0.8rem;
+    margin-left:110px;
+    border:2px solid white;
+}
+
+.address-container{
+    color:white;
+    width:50%;
+ 
+}
+.address-container span img{
+    width:20px;
+    height:20px;
+    
+}
+
+.social-icons-container{
+    width:auto;
+    height:auto;
+    margin-left:30%;
+    
+
+}
+.social-icons-container img{
+    width:25px;
+    height:25px;
+    margin:30px;
+
 }
